@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+#top .all_menu,
+.gnb_wrap {
+    display: none;
+}
+
+@media only screen and (max-width:1280px) {
+
+    /* work 아이콘 02사이즈 */
+    body .content_list .icon2 {
+        width: 18%;
+    }
+
+    /* work 아이콘 03사이즈 */
+    body .content_list .icon3 {
+        width: 25%;
+    }
+
+    /* work 아이콘 04사이즈 */
+    body .content_list .icon4 {
+        width: 20%;
+    }
+
+    /* work 아이콘 04사이즈 */
+    body .content_list .icon5 {
+        width: 18%;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width:768px) {
+
+    /* 헤더 */
+    body #top {
+        height: 12vw;
+        min-height: 35px;
+    }
+
+    .header #logo {
+        left: 5%;
+    }
+
+    .header #logo img {
+        width: 100%;
+        padding-right: 70px;
+        min-width: 320px;
+    }
+
+    #top #gnb {
+        display: none;
+    }
+
+    #top .all_menu {
+        display: block;
+    }
+
+    #top .gnb_wrap {
+        display: block;
+    }
+
+    /* 마우스 에니메이션 숨김 */
+    .content .mouse {
+        display: none;
+    }
+
+    /* about 이미지변경 */
+    body .content_list .pc_img {
+        display: none;
+    }
+    body .content_list .mo_img {
+        display: block;
+    }
+    body .main_ban #about_page1 {
+        width: 100%;
+        height: 100vh;
+        background: url(../images/about/mo_01main.png) no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+
+    /* work 이미지변경 */
+    /* 아이콘숨김 */
+    .content_list .icon {
+        display: none;
+    }
+    /* work, mission top배너 공통 */
+    body .main_ban #work_page1 {
+        width: 100%;
+        height: 50vh;
+        background: url(../images/work/mo_work_top.png) no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* 푸터 */
+    footer .footer_area {
+        font-size: 2.7vw;
+        padding: 3vw;
+    }
+
+    body footer .copy {
+        font-size: 2.5vw;
+        padding: 2vw;
+        text-align: center;
+    }
+
+    .foot_logo img {
+        width: 100%;
+    }
+
+    body .footer_area .info .foot_logo {
+        margin-right: 7vw;
+    }
+
+
+
+    /* 사이드 버튼 */
+    body .side_bnr_wrap {
+        width: 40px;
+    }
+
+
+    body .side_bnr_wrap .bt_top,
+    body .side_bnr_wrap .bt_btm {
+        width: 40px;
+        height: 40px;
+        box-sizing: border-box;
+        background: url(../images/common/bt_side_arrow.png) no-repeat center / 17px;
+    }
+
+}
