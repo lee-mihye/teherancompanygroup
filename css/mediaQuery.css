@@ -26,28 +26,20 @@
     body .content_list .icon5 {
         width: 18%;
     }
+
 }
 
 
-
-
-
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:930px) {
 
     /* 헤더 */
     body #top {
-        height: 12vw;
-        min-height: 35px;
-    }
-
-    .header #logo {
-        left: 5%;
+        height: 50px;
     }
 
     .header #logo img {
         width: 100%;
-        padding-right: 70px;
-        min-width: 320px;
+
     }
 
     #top #gnb {
@@ -62,6 +54,16 @@
         display: block;
     }
 
+}
+
+
+
+
+
+@media only screen and (max-width:768px) {
+
+
+
     /* 마우스 에니메이션 숨김 */
     .content .mouse {
         display: none;
@@ -71,9 +73,11 @@
     body .content_list .pc_img {
         display: none;
     }
+
     body .content_list .mo_img {
         display: block;
     }
+
     body .main_ban #about_page1 {
         width: 100%;
         height: 100vh;
@@ -88,6 +92,7 @@
     .content_list .icon {
         display: none;
     }
+
     /* work, mission top배너 공통 */
     body .main_ban #work_page1 {
         width: 100%;
@@ -98,17 +103,28 @@
     }
 
 
+    /* connect */
+    .content_list .visit .text h2 {
+        font-size: 7.5vw;
+    }
 
+    .content_list .visit .text p {
+        font-size: 3vw;
+        font-weight: 100;
+        margin: 2.3888vw auto 0;
+    }
 
+    .content_list .visit_info {
+        margin: 4.5138vw auto 0;
+        line-height: 4.5vw;
+        font-size:2.9268vw;
 
+    }
 
-
-
-
-
-
-
-
+    .content_list .visit_info li {
+        float: none;
+        margin: 0 auto 4.878vw;
+    }
 
 
 
@@ -139,7 +155,7 @@
 
 
 
-    /* 사이드 버튼 */
+    /* 위아래 사이드 버튼 */
     body .side_bnr_wrap {
         width: 40px;
     }

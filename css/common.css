@@ -204,7 +204,7 @@ h6 {
 	/*16px기준*/
 }
 
-/*상단영역*/
+/**********************************상단영역**********************************/
 
 .header {
 	position: fixed;
@@ -231,16 +231,21 @@ h6 {
 	height: 60px;
 }
 
-/*로고*/
-#logo {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	left: 2%;
-
+.top_box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
 }
 
-/*GNB 메뉴*/
+/*로고*/
+.logo_box{margin-left: 2%;}
+
+#logo {
+display: block;
+}
+
+/**********************************GNB 메뉴**********************************/
 #gnb {
 	position: absolute;
 	top: 50%;
@@ -280,12 +285,17 @@ h6 {
 
 
 
-/* 햄버거메뉴 */
+/********************************** 햄버거메뉴 **********************************/
+.ham{
+	position: relative;
+	width: 70px;
+	height: 100%;
+}
 .header .all_menu {
 	position: absolute;
-	right: 5%;
 	top: 50%;
-	transform: translateY(-50%);
+	left: 50%;
+	transform: translate(-50%, -50%);
 	width: 22px;
 	height: 22px;
 	z-index: 102;
@@ -340,7 +350,7 @@ h6 {
 
 
 
-/* 햄버거 메뉴안의 GNB */
+/********************************** 햄버거 메뉴안의 GNB **********************************/
 .header .gnb_wrap .gnb li.on a {
 	color: lime;
 }
@@ -396,13 +406,17 @@ h6 {
 
 
 
-/*푸터 영역*/
+/**********************************푸터 영역**********************************/
 footer {
 	background-color: #3c3c3c;
 	width: 100%;
 	color: #ebebeb;
 	font-size: 16px;
 	line-height: 2;
+}
+
+footer a{
+	text-shadow: none;
 }
 
 .footer_area {
@@ -440,19 +454,19 @@ footer .copy {
 
 
 
-/*개별 페이지 디자인*/
+/**********************************개별 페이지 디자인**********************************/
 
 /* (공통) 메인배너 제외 컨텐츠 리스트 */
-.content_list img{
+.content_list img {
 	display: block;
 	margin: 0 auto;
 	max-width: 100%;
-	width: 1280PX;
+	width: 1280px;
 	height: auto;
 }
 
 
-/* about 이미지 */
+/********************************** about **********************************/
 .main_ban #about_page1 {
 	width: 100%;
 	height: 100vh;
@@ -460,22 +474,30 @@ footer .copy {
 	background-position: center center;
 	background-size: cover;
 }
+
 #about_page3 {
 	background-color: #faf7ee;
 }
+
 #about_page4 {
 	background-color: #f0f1f3;
 }
+
 #about_page5 {
 	background-color: #f5f7f4;
 }
 
-.content_list .pc_img{display:block;}
-.content_list .mo_img{display:none;}
+.content_list .pc_img {
+	display: block;
+}
+
+.content_list .mo_img {
+	display: none;
+}
 
 
 
-/* work 이미지 */
+/********************************** work**********************************/
 .main_ban #work_page1 {
 	width: 100%;
 	height: 50vh;
@@ -483,41 +505,48 @@ footer .copy {
 	background-position: center center;
 	background-size: cover;
 }
-.content_list #work_page2,#work_page3,#work_page4,#work_page5{
+
+.content_list #work_page2,
+#work_page3,
+#work_page4,
+#work_page5 {
 	position: relative;
 	/* 아이콘이미지 부모 */
 }
+
 /* 아이콘 이미지 (공통적용) */
-.content_list .icon{
+.content_list .icon {
 	width: 100%;
 	height: auto;
 	position: absolute;
 }
+
 /* 아이콘2 */
-.content_list .icon2{
+.content_list .icon2 {
 	width: 230px;
 	top: 34%;
 	left: 80%;
 }
+
 /* 아이콘3 */
-.content_list .icon3{
+.content_list .icon3 {
 	width: 317px;
 	top: 20%;
-	right:74%;
+	right: 74%;
 }
 
 /* 아이콘4 */
-.content_list .icon4{
+.content_list .icon4 {
 	width: 250px;
 	top: 18%;
 	left: 80%;
 }
 
 /* 아이콘5 */
-.content_list .icon5{
+.content_list .icon5 {
 	width: 226px;
 	top: 15%;
-	right:80%;
+	right: 80%;
 }
 
 
@@ -526,14 +555,97 @@ footer .copy {
 
 
 
-/* mission 이미지 */
-#mission_page5 {
+/********************************** history**********************************/
+#history_page2 {
 	background-color: #f2f3f7;
 }
 
 
 
 
+
+/********************************* connect *******************************/
+.visit{
+	max-width: 1440px;
+	margin: 7vw auto;
+	text-align: center;
+}
+.visit .text h2{
+	font-size:65px;
+	font-weight: 600;
+}
+
+.visit .text p{
+	font-size:22px;
+	font-weight: 100;
+	margin-top: 30px;
+}
+
+/* connect 텍스트 페이드업 */
+.fadeInUp {
+	-webkit-animation: fadeInUp 2s;
+	animation: fadeInUp 2s;
+}
+@-webkit-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(100%);
+		transform: translateY(100%);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(100%);
+		-ms-transform: translateY(100%);
+		transform: translateY(100%);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+
+/* 구글지도 */
+.google_map{
+max-width: 1440px;
+margin: 20px auto;
+}
+
+/* 회사정보 */
+.visit_info{
+	margin:4.5138vw auto 0;
+	line-height: 2;
+	
+}
+.visit_info h3{
+	font-weight: 600;
+}
+
+.visit_info li:nth-child(1){
+	width: 42%;
+}
+.visit_info li:nth-child(2){
+	width: 29%;
+}
+.visit_info li:nth-child(3){
+	width: 29%;
+}
+.visit_info a{
+	text-shadow: none;
+	color: #000;
+}
 
 
 /* #page2 {
@@ -546,26 +658,11 @@ footer .copy {
 	background: url(images/pic4.png) no-repeat top/cover;
 }
 
-#page4 {
-	background: url(images/pic4.png) no-repeat top/cover;
-}
-
-#page5 {
-	background: url(images/pic5.png) no-repeat top/cover;
-}
-
-#page6 {
-	background: url(images/pic6.png) no-repeat top/cover;
-}
-
-#page7 {
-	background: url(images/pic7.png) no-repeat top/cover;
-} */
 
 
 
 
-/*마우스모양애니메이션***************************************/
+/**********************************마우스모양애니메이션*****************************/
 
 .mouse {
 	display: block;
@@ -593,7 +690,6 @@ footer .copy {
 
 	-webkit-animation: sdb 2s infinite;
 	animation: sdb 2s infinite;
-
 }
 
 @-webkit-keyframes sdb {
@@ -638,7 +734,10 @@ footer .copy {
 
 
 
-/* 사이드 버튼 */
+
+
+
+/********************************** 위아래 사이드 버튼 **********************************/
 .side_bnr_wrap {
 	position: fixed;
 	opacity: 0.9;
