@@ -37,6 +37,10 @@
         height: 50px;
     }
 
+    .top_box {
+        justify-content: space-between;
+    }
+
     .header #logo img {
         width: 100%;
 
